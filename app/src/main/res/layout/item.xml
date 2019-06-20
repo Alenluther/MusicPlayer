@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#ccffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/numOrder"
+            android:orientation="vertical"
+            android:id="@+id/info">
+            <TextView
+                android:id="@+id/songname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="123"
+                android:textColor="#5e6073"
+                android:textSize="18sp"
+                android:maxLines="1"
+                ></TextView>
+            <TextView
+                android:id="@+id/signer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:text="sadingding"
+                android:textColor="#5e6073"
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/numOrder"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img"
+                android:src="@drawable/triangle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:id="@+id/order"
+                android:text="1"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
